@@ -20,5 +20,4 @@ export type ColorsProps =
   | "--terceary-700"
   | "--terceary-800"
   | "--terceary-900"
-  | "--terceary-950"
-  | string;
+  | "--terceary-950";
