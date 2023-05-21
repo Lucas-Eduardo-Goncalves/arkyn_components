@@ -1,5 +1,5 @@
 import { textStyle } from "./styles.css";
-import { TextProps } from "./types";
+import { TextProps } from "../../types";
 
 const tag = {
   link: (props: any) => <a {...props} />,

@@ -1,10 +1,5 @@
 import { AnchorHTMLAttributes, HTMLAttributes } from "react";
-import {
-  FontProps,
-  FontSizeProps,
-  FontWeightProps,
-  SpaceProps,
-} from "../../types";
+import { FontProps, FontSizeProps, FontWeightProps, SpaceProps } from ".";
 
 type BaseTypingProps = {
   font?: FontProps;

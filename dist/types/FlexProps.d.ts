@@ -1,5 +1,5 @@
 import { HTMLAttributes, CSSProperties } from "react";
-import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps, ColorsProps } from "../../types";
+import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps, ColorsProps } from ".";
 export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
     interiorSpace?: SpaceProps;
     outerSpace?: SpaceProps;
@@ -13,4 +13,4 @@ export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
     height?: CSSProperties["height"];
     radii?: RadiiProps;
 };
-//# sourceMappingURL=types.d.ts.map
+//# sourceMappingURL=FlexProps.d.ts.map

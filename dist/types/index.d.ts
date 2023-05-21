@@ -8,4 +8,6 @@ export type { JustifyContentProps } from "./_justifyContent";
 export type { RadiiProps } from "./_radii";
 export type { SpaceProps } from "./_space";
 export type { WrapProps } from "./_wrap";
+export type { FlexProps } from "./FlexProps";
+export type { TextProps } from "./TextProps";
 //# sourceMappingURL=index.d.ts.map

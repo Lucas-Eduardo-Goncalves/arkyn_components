@@ -7,7 +7,7 @@ import {
   WrapProps,
   RadiiProps,
   ColorsProps,
-} from "../../types";
+} from ".";
 
 export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
   interiorSpace?: SpaceProps;

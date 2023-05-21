@@ -1,5 +1,5 @@
 import { AnchorHTMLAttributes, HTMLAttributes } from "react";
-import { FontProps, FontSizeProps, FontWeightProps, SpaceProps } from "../../types";
+import { FontProps, FontSizeProps, FontWeightProps, SpaceProps } from ".";
 type BaseTypingProps = {
     font?: FontProps;
     fontSize?: FontSizeProps;
@@ -25,4 +25,4 @@ type AsHeadingProps = Omit<HTMLAttributes<HTMLHeadingElement>, "className"> & Ba
 };
 export type TextProps = AsLinkProps | AsSpanProps | AsSmallProps | AsPProps | AsHeadingProps;
 export {};
-//# sourceMappingURL=types.d.ts.map
+//# sourceMappingURL=TextProps.d.ts.map

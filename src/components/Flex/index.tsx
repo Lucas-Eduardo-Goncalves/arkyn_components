@@ -1,5 +1,5 @@
 import { flexStyle } from "./styles.css";
-import { FlexProps } from "./types";
+import { FlexProps } from "../../types";
 
 export function Flex({
   outerSpace,
