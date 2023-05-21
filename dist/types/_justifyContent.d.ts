@@ -1,0 +1,2 @@
+export type JustifyContentProps = "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "initial" | "inherit";
+//# sourceMappingURL=_justifyContent.d.ts.map
