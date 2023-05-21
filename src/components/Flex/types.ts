@@ -6,6 +6,7 @@ import {
   FlexDirectionProps,
   WrapProps,
   RadiiProps,
+  ColorsProps,
 } from "../../types";
 
 export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
@@ -13,7 +14,7 @@ export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
   outerSpace?: SpaceProps;
   space?: SpaceProps;
 
-  bg?: string;
+  bg?: ColorsProps;
 
   direction?: FlexDirectionProps;
   align?: AlignItemsProps;

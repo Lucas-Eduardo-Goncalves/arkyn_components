@@ -1,10 +1,10 @@
 import { HTMLAttributes, CSSProperties } from "react";
-import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps } from "../../types";
+import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps, ColorsProps } from "../../types";
 export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
     interiorSpace?: SpaceProps;
     outerSpace?: SpaceProps;
     space?: SpaceProps;
-    bg?: string;
+    bg?: ColorsProps;
     direction?: FlexDirectionProps;
     align?: AlignItemsProps;
     justify?: JustifyContentProps;

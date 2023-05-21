@@ -1,4 +1,5 @@
 export type { AlignItemsProps } from "./_alignItems";
+export type { ColorsProps } from "./_colors";
 export type { FlexDirectionProps } from "./_flexDirection";
 export type { FontProps } from "./_font";
 export type { FontSizeProps } from "./_fontSize";
