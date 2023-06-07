@@ -66,7 +66,19 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         };
     };
     variant: {
-        solid: {};
+        solid: {
+            border: "none";
+            background: "var(--primary-500)";
+            color: "#ffffff";
+            ":hover": {
+                background: "var(--primary-400)";
+                cursor: "pointer";
+            };
+            ":disabled": {
+                background: "var(--primary-400)";
+                cursor: "not-allowed";
+            };
+        };
         dashed: {};
         ghost: {};
         outline: {};
@@ -283,6 +295,23 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
     };
     isLoading: {
         true: {};
+    };
+    size: {
+        unset: {
+            height: "unset";
+        };
+        xs: {
+            height: "var(--size-xs)";
+        };
+        sm: {
+            height: "var(--size-sm)";
+        };
+        md: {
+            height: "var(--size-md)";
+        };
+        lg: {
+            height: "var(--size-lg)";
+        };
     };
 }>;
 //# sourceMappingURL=styles.css.d.ts.map

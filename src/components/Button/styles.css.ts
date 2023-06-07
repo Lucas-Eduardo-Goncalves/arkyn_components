@@ -34,7 +34,20 @@ export const buttonStyle = recipe({
     },
 
     variant: {
-      solid: {},
+      solid: {
+        border: "none",
+        background: "var(--primary-500)",
+
+        color: "#ffffff",
+        ":hover": {
+          background: "var(--primary-400)",
+          cursor: "pointer",
+        },
+        ":disabled": {
+          background: "var(--primary-400)",
+          cursor: "not-allowed",
+        },
+      },
       dashed: {},
       ghost: {},
       outline: {},
@@ -124,6 +137,14 @@ export const buttonStyle = recipe({
     isAttached: { true: {} },
     isDangerous: { true: {} },
     isLoading: { true: {} },
+
+    size: {
+      unset: { height: "unset" },
+      xs: { height: "var(--size-xs)" },
+      sm: { height: "var(--size-sm)" },
+      md: { height: "var(--size-md)" },
+      lg: { height: "var(--size-lg)" },
+    },
   },
 
   defaultVariants: {
@@ -132,8 +153,10 @@ export const buttonStyle = recipe({
     justify: "flex-start",
     outerSpace: 0,
     interiorSpace: 0,
-    radii: "none",
+    radii: "sm",
     space: 0,
     wrap: "nowrap",
+    variant: "solid",
+    size: "md",
   },
 });
