@@ -28,6 +28,7 @@ export type ButtonProps = Omit<
   width?: CSSProperties["width"];
   height?: CSSProperties["height"];
   bg?: CSSProperties["background"];
+  flex?: CSSProperties["flex"];
 
   font?: FontProps;
   fontSize?: FontSizeProps;

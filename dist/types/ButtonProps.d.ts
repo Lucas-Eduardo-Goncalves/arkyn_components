@@ -12,6 +12,7 @@ export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "classNa
     width?: CSSProperties["width"];
     height?: CSSProperties["height"];
     bg?: CSSProperties["background"];
+    flex?: CSSProperties["flex"];
     font?: FontProps;
     fontSize?: FontSizeProps;
     fontWeight?: FontWeightProps;

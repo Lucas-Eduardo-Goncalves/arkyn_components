@@ -25,6 +25,7 @@ export function Button({
   rightIcon,
   font,
   fontSize,
+  flex,
   fontWeight,
   ...rest
 }: ButtonProps) {
@@ -48,7 +49,7 @@ export function Button({
         isDangerous,
         isAttached,
       })}
-      style={{ width, background: bg, height, ...style }}
+      style={{ width, background: bg, flex, height, ...style }}
       {...rest}
     >
       {isLoading && "Loading..."}

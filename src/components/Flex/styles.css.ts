@@ -114,9 +114,7 @@ export const flexStyle = recipe({
   },
 
   defaultVariants: {
-    align: "start",
     direction: "row",
-    justify: "flex-start",
     outerSpace: 0,
     interiorSpace: 0,
     radii: "none",

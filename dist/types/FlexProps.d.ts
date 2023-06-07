@@ -12,5 +12,6 @@ export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
     width?: CSSProperties["width"];
     height?: CSSProperties["height"];
     bg?: CSSProperties["background"];
+    flex?: CSSProperties["flex"];
 };
 //# sourceMappingURL=FlexProps.d.ts.map

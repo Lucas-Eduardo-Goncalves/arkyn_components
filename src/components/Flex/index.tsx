@@ -12,6 +12,7 @@ export function Flex({
   justify,
   style,
   bg,
+  flex,
   radii,
   wrap,
   ...rest
@@ -28,7 +29,7 @@ export function Flex({
         radii,
         wrap,
       })}
-      style={{ width, background: bg, height, ...style }}
+      style={{ width, background: bg, height, flex, ...style }}
       {...rest}
     />
   );
