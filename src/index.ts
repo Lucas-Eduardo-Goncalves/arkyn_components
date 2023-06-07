@@ -1,1 +1,1 @@
-export { Flex, Text } from "./components";
+export * from "./components";

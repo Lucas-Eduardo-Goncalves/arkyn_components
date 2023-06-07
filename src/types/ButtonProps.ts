@@ -1,4 +1,4 @@
-import { HTMLAttributes, CSSProperties } from "react";
+import { ButtonHTMLAttributes, CSSProperties, ReactNode } from "react";
 import {
   SpaceProps,
   AlignItemsProps,
@@ -8,7 +8,10 @@ import {
   RadiiProps,
 } from ".";
 
-export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
+export type ButtonProps = Omit<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  "className"
+> & {
   interiorSpace?: SpaceProps;
   outerSpace?: SpaceProps;
   space?: SpaceProps;
@@ -22,4 +25,15 @@ export type FlexProps = Omit<HTMLAttributes<HTMLDivElement>, "className"> & {
   width?: CSSProperties["width"];
   height?: CSSProperties["height"];
   bg?: CSSProperties["background"];
+
+  // Button component exclusive
+  variant?: "outline" | "dashed" | "solid" | "ghost" | "link";
+  size?: "xs" | "sm" | "md" | "lg" | "unset";
+
+  isDangerous?: boolean;
+  isLoading?: boolean;
+  isAttached?: boolean;
+
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
 };

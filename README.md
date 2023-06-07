@@ -13,7 +13,7 @@
   --primary-900: #4c1d95;
   --primary-950: #2e1065;
 
-  --terceary-50: #fafafa;
+  --terceary-050: #fafafa;
   --terceary-100: #f4f4f5;
   --terceary-200: #e4e4e7;
   --terceary-300: #d4d4d8;
@@ -69,5 +69,11 @@
   --font-light: 400;
   --font-regular: 500;
   --font-bold: 700;
+
+  /* BUTTON AND INPUT SIZE */
+  --size-xs: 0.75rem;
+  --size-sm: 1rem;
+  --size-md: 1.5rem;
+  --size-lg: 2rem;
 }
 ```

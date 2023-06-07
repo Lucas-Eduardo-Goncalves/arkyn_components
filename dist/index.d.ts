@@ -1,2 +1,2 @@
-export { Flex, Text } from "./components";
+export * from "./components";
 //# sourceMappingURL=index.d.ts.map
