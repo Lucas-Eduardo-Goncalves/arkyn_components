@@ -34,6 +34,7 @@ export function Button({
         interiorSpace,
         justify,
         space,
+        size,
         outerSpace,
         radii,
         wrap,

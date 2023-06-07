@@ -71,9 +71,9 @@
   --font-bold: 700;
 
   /* BUTTON AND INPUT SIZE */
-  --size-xs: 0.75rem;
-  --size-sm: 1rem;
-  --size-md: 1.5rem;
-  --size-lg: 2rem;
+  --size-xs: 0.5rem;
+  --size-sm: 1.5rem;
+  --size-md: 2.5rem;
+  --size-lg: 3.5rem;
 }
 ```
