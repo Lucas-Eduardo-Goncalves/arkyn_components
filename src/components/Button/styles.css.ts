@@ -148,13 +148,13 @@ export const buttonStyle = recipe({
   },
 
   defaultVariants: {
-    align: "start",
+    align: "center",
     direction: "row",
-    justify: "flex-start",
-    outerSpace: 0,
+    justify: "center",
+    outerSpace: 4,
     interiorSpace: 0,
     radii: "sm",
-    space: 0,
+    space: 4,
     wrap: "nowrap",
     variant: "solid",
     size: "md",
