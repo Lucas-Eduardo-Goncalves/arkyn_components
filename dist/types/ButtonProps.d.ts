@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, CSSProperties, ReactNode } from "react";
-import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps } from ".";
+import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps, FontProps, FontSizeProps, FontWeightProps } from ".";
 export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className"> & {
     interiorSpace?: SpaceProps;
     outerSpace?: SpaceProps;
@@ -12,6 +12,9 @@ export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "classNa
     width?: CSSProperties["width"];
     height?: CSSProperties["height"];
     bg?: CSSProperties["background"];
+    font?: FontProps;
+    fontSize?: FontSizeProps;
+    fontWeight?: FontWeightProps;
     variant?: "outline" | "dashed" | "solid" | "ghost" | "link";
     size?: "xs" | "sm" | "md" | "lg" | "unset";
     isDangerous?: boolean;

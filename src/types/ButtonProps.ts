@@ -6,6 +6,9 @@ import {
   FlexDirectionProps,
   WrapProps,
   RadiiProps,
+  FontProps,
+  FontSizeProps,
+  FontWeightProps,
 } from ".";
 
 export type ButtonProps = Omit<
@@ -25,6 +28,10 @@ export type ButtonProps = Omit<
   width?: CSSProperties["width"];
   height?: CSSProperties["height"];
   bg?: CSSProperties["background"];
+
+  font?: FontProps;
+  fontSize?: FontSizeProps;
+  fontWeight?: FontWeightProps;
 
   // Button component exclusive
   variant?: "outline" | "dashed" | "solid" | "ghost" | "link";

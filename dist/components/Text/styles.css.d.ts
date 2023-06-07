@@ -1,12 +1,4 @@
 export declare const textStyle: import("@vanilla-extract/recipes").RuntimeFn<{
-    font: {
-        default: {
-            fontFamily: "var(--font-default)";
-        };
-        code: {
-            fontFamily: "var(--font-code)";
-        };
-    };
     hoverStyle: {
         color: {
             ":hover": {
@@ -19,6 +11,14 @@ export declare const textStyle: import("@vanilla-extract/recipes").RuntimeFn<{
                 textDecoration: "underline";
                 cursor: "pointer";
             };
+        };
+    };
+    font: {
+        default: {
+            fontFamily: "var(--font-default)";
+        };
+        code: {
+            fontFamily: "var(--font-code)";
         };
     };
     fontSize: {

@@ -8,11 +8,6 @@ export const textStyle = recipe({
   },
 
   variants: {
-    font: {
-      default: { fontFamily: "var(--font-default)" },
-      code: { fontFamily: "var(--font-code)" },
-    },
-
     hoverStyle: {
       color: {
         ":hover": { color: "var(--primary-400)", cursor: "pointer" },
@@ -21,7 +16,10 @@ export const textStyle = recipe({
         ":hover": { textDecoration: "underline", cursor: "pointer" },
       },
     },
-
+    font: {
+      default: { fontFamily: "var(--font-default)" },
+      code: { fontFamily: "var(--font-code)" },
+    },
     fontSize: {
       xxs: { fontSize: "var(--font-xxs)" },
       xs: { fontSize: "var(--font-xs)" },

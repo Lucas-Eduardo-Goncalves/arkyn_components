@@ -23,6 +23,9 @@ export function Button({
   isLoading,
   leftIcon,
   rightIcon,
+  font,
+  fontSize,
+  fontWeight,
   ...rest
 }: ButtonProps) {
   return (
@@ -34,6 +37,9 @@ export function Button({
         interiorSpace,
         justify,
         space,
+        font,
+        fontSize,
+        fontWeight,
         size,
         outerSpace,
         radii,

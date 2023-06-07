@@ -55,6 +55,28 @@ export const buttonStyle = recipe({
       link: {},
     },
 
+    font: {
+      default: { fontFamily: "var(--font-default)" },
+      code: { fontFamily: "var(--font-code)" },
+    },
+    fontSize: {
+      xxs: { fontSize: "var(--font-xxs)" },
+      xs: { fontSize: "var(--font-xs)" },
+      sm: { fontSize: "var(--font-sm)" },
+      md: { fontSize: "var(--font-md)" },
+      lg: { fontSize: "var(--font-lg)" },
+      xl: { fontSize: "var(--font-xl)" },
+      "2xl": { fontSize: "var(--font-3xl)" },
+      "3xl": { fontSize: "var(--font-3xl)" },
+      "4xl": { fontSize: "var(--font-4xl)" },
+    },
+
+    fontWeight: {
+      light: { fontWeight: "var(--font-light)" },
+      regular: { fontWeight: "var(--font-regular)" },
+      bold: { fontWeight: "var(--font-bold)" },
+    },
+
     radii: {
       none: { borderRadius: 0 },
       px: { borderRadius: "var(--radii-px)" },
@@ -136,7 +158,6 @@ export const buttonStyle = recipe({
 
     isAttached: { true: {} },
     isDangerous: { true: {} },
-    isLoading: { true: {} },
 
     size: {
       unset: { height: "unset" },
@@ -151,12 +172,15 @@ export const buttonStyle = recipe({
     align: "center",
     direction: "row",
     justify: "center",
-    outerSpace: 4,
-    interiorSpace: 0,
+    outerSpace: 0,
+    interiorSpace: 4,
     radii: "sm",
     space: 4,
     wrap: "nowrap",
     variant: "solid",
     size: "md",
+    font: "default",
+    fontSize: "md",
+    fontWeight: "bold",
   },
 });

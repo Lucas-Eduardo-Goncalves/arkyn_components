@@ -85,6 +85,54 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         unset: {};
         link: {};
     };
+    font: {
+        default: {
+            fontFamily: "var(--font-default)";
+        };
+        code: {
+            fontFamily: "var(--font-code)";
+        };
+    };
+    fontSize: {
+        xxs: {
+            fontSize: "var(--font-xxs)";
+        };
+        xs: {
+            fontSize: "var(--font-xs)";
+        };
+        sm: {
+            fontSize: "var(--font-sm)";
+        };
+        md: {
+            fontSize: "var(--font-md)";
+        };
+        lg: {
+            fontSize: "var(--font-lg)";
+        };
+        xl: {
+            fontSize: "var(--font-xl)";
+        };
+        "2xl": {
+            fontSize: "var(--font-3xl)";
+        };
+        "3xl": {
+            fontSize: "var(--font-3xl)";
+        };
+        "4xl": {
+            fontSize: "var(--font-4xl)";
+        };
+    };
+    fontWeight: {
+        light: {
+            fontWeight: "var(--font-light)";
+        };
+        regular: {
+            fontWeight: "var(--font-regular)";
+        };
+        bold: {
+            fontWeight: "var(--font-bold)";
+        };
+    };
     radii: {
         none: {
             borderRadius: number;
@@ -291,9 +339,6 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         true: {};
     };
     isDangerous: {
-        true: {};
-    };
-    isLoading: {
         true: {};
     };
     size: {
