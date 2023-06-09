@@ -66,6 +66,7 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         };
     };
     variant: {
+        unset: {};
         solid: {
             border: "none";
             color: "#ffffff";
@@ -94,23 +95,33 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
                 cursor: "not-allowed";
             };
         };
-        ghost: {};
         outline: {
             border: "1px solid var(--terceary-500)";
             color: "var(--terceary-500)";
             background: "inherit";
             ":hover": {
-                border: "1px dashed var(--primary-400)";
+                border: "1px solid var(--primary-400)";
                 color: "var(--primary-400)";
                 cursor: "pointer";
             };
             ":disabled": {
-                border: "1px dashed var(--primary-400)";
+                border: "1px solid var(--primary-400)";
                 color: "var(--primary-400)";
                 cursor: "not-allowed";
             };
         };
-        unset: {};
+        ghost: {
+            color: "var(--terceary-500)";
+            background: "inherit";
+            ":hover": {
+                filter: "brigtness(0.9)";
+                cursor: "pointer";
+            };
+            ":disabled": {
+                filter: "brigtness(0.9)";
+                cursor: "not-allowed";
+            };
+        };
         link: {};
     };
     font: {
