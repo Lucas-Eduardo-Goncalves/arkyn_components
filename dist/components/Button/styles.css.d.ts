@@ -91,6 +91,7 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
             };
             ":disabled": {
                 filter: "brightness(0.9)";
+                border: "none";
                 cursor: "not-allowed";
             };
         };
@@ -105,6 +106,7 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
             };
             ":disabled": {
                 filter: "brightness(0.9)";
+                border: "none";
                 cursor: "not-allowed";
             };
         };
@@ -118,6 +120,7 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
             };
             ":disabled": {
                 filter: "brightness(0.9)";
+                border: "none";
                 cursor: "not-allowed";
             };
         };

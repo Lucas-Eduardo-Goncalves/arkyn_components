@@ -61,6 +61,7 @@ export const buttonStyle = recipe({
         },
         ":disabled": {
           filter: "brightness(0.9)",
+          border: "none",
           cursor: "not-allowed",
         },
       },
@@ -76,6 +77,7 @@ export const buttonStyle = recipe({
         },
         ":disabled": {
           filter: "brightness(0.9)",
+          border: "none",
           cursor: "not-allowed",
         },
       },
@@ -89,6 +91,7 @@ export const buttonStyle = recipe({
         },
         ":disabled": {
           filter: "brightness(0.9)",
+          border: "none",
           cursor: "not-allowed",
         },
       },
