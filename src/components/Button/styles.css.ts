@@ -60,8 +60,7 @@ export const buttonStyle = recipe({
           cursor: "pointer",
         },
         ":disabled": {
-          border: "1px dashed var(--primary-400)",
-          color: "var(--primary-400)",
+          filter: "brightness(0.9)",
           cursor: "not-allowed",
         },
       },
@@ -76,8 +75,7 @@ export const buttonStyle = recipe({
           cursor: "pointer",
         },
         ":disabled": {
-          border: "1px solid var(--primary-400)",
-          color: "var(--primary-400)",
+          filter: "brightness(0.9)",
           cursor: "not-allowed",
         },
       },
