@@ -36,9 +36,9 @@ export const buttonStyle = recipe({
     variant: {
       solid: {
         border: "none",
+        color: "#ffffff",
         background: "var(--primary-500)",
 
-        color: "#ffffff",
         ":hover": {
           background: "var(--primary-400)",
           cursor: "pointer",
@@ -48,9 +48,39 @@ export const buttonStyle = recipe({
           cursor: "not-allowed",
         },
       },
-      dashed: {},
+      dashed: {
+        border: "1px dashed var(--terceary-500)",
+        color: "var(--terceary-500)",
+        background: "inherit",
+
+        ":hover": {
+          border: "1px dashed var(--primary-400)",
+          color: "var(--primary-400)",
+          cursor: "pointer",
+        },
+        ":disabled": {
+          border: "1px dashed var(--primary-400)",
+          color: "var(--primary-400)",
+          cursor: "not-allowed",
+        },
+      },
       ghost: {},
-      outline: {},
+      outline: {
+        border: "1px solid var(--terceary-500)",
+        color: "var(--terceary-500)",
+        background: "inherit",
+
+        ":hover": {
+          border: "1px dashed var(--primary-400)",
+          color: "var(--primary-400)",
+          cursor: "pointer",
+        },
+        ":disabled": {
+          border: "1px dashed var(--primary-400)",
+          color: "var(--primary-400)",
+          cursor: "not-allowed",
+        },
+      },
       unset: {},
       link: {},
     },
@@ -59,6 +89,7 @@ export const buttonStyle = recipe({
       default: { fontFamily: "var(--font-default)" },
       code: { fontFamily: "var(--font-code)" },
     },
+
     fontSize: {
       xxs: { fontSize: "var(--font-xxs)" },
       xs: { fontSize: "var(--font-xs)" },
