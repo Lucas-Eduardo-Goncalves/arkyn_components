@@ -83,13 +83,14 @@ export const buttonStyle = recipe({
       },
       ghost: {
         color: "var(--terceary-500)",
+        border: "none",
         background: "inherit",
         ":hover": {
-          filter: "brigtness(0.9)",
+          filter: "brightness(0.9)",
           cursor: "pointer",
         },
         ":disabled": {
-          filter: "brigtness(0.9)",
+          filter: "brightness(0.9)",
           cursor: "not-allowed",
         },
       },
