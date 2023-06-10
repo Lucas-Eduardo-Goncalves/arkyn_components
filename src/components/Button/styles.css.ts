@@ -229,7 +229,7 @@ export const buttonStyle = recipe({
       },
     },
     {
-      variants: { variant: "outline" || "dashed", isDangerous: true },
+      variants: { variant: "outline", isDangerous: true },
       style: {
         borderColor: "var(--danger-500)",
         color: "var(--danger-500)",
@@ -241,8 +241,27 @@ export const buttonStyle = recipe({
         },
       },
     },
+    {
+      variants: { variant: "dashed", isDangerous: true },
+      style: {
+        borderColor: "var(--danger-500)",
+        color: "var(--danger-500)",
+        selectors: {
+          "&:hover:not(:disabled)": {
+            borderColor: "var(--danger-400)",
+            color: "var(--danger-400)",
+          },
+        },
+      },
+    },
+    {
+      variants: { variant: "ghost", isDangerous: true },
+      style: {
+        color: "var(--danger-500)",
+        background: "inherit",
+      },
+    },
     { variants: { variant: "link", isDangerous: true }, style: {} },
-    { variants: { variant: "ghost", isDangerous: true }, style: {} },
   ],
 
   defaultVariants: {
