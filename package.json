@@ -1,6 +1,6 @@
 {
   "name": "arkyn_components",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Lib for react components.",
   "main": "./dist/bundle.js",
   "author": "Lucas Gonçalves",
