@@ -1,12 +1,4 @@
 export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
-    direction: {
-        row: {
-            flexDirection: "row";
-        };
-        column: {
-            flexDirection: "column";
-        };
-    };
     align: {
         normal: {
             alignItems: "normal";
@@ -64,70 +56,6 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         inherit: {
             justifyContent: "inherit";
         };
-    };
-    variant: {
-        unset: {};
-        solid: {
-            border: "none";
-            color: "#ffffff";
-            background: "var(--primary-500)";
-            ":hover": {
-                background: "var(--primary-400)";
-                cursor: "pointer";
-            };
-            ":disabled": {
-                background: "var(--primary-400)";
-                cursor: "not-allowed";
-            };
-        };
-        dashed: {
-            border: "1px dashed var(--terceary-500)";
-            color: "var(--terceary-500)";
-            background: "inherit";
-            ":hover": {
-                border: "1px dashed var(--primary-400)";
-                color: "var(--primary-400)";
-                cursor: "pointer";
-            };
-            ":disabled": {
-                filter: "brightness(0.9)";
-                border: "none";
-                cursor: "not-allowed";
-            };
-        };
-        outline: {
-            border: "1px solid var(--terceary-500)";
-            color: "var(--terceary-500)";
-            background: "inherit";
-            ":hover": {
-                border: "1px solid var(--primary-400)";
-                color: "var(--primary-400)";
-                cursor: "pointer";
-            };
-            ":disabled": {
-                filter: "brightness(0.9)";
-                border: "none";
-                cursor: "not-allowed";
-            };
-            selectors: {
-                "&:not(:disabled):hover": {};
-            };
-        };
-        ghost: {
-            color: "var(--terceary-500)";
-            border: "none";
-            background: "inherit";
-            ":hover": {
-                filter: "brightness(0.9)";
-                cursor: "pointer";
-            };
-            ":disabled": {
-                filter: "brightness(0.9)";
-                border: "none";
-                cursor: "not-allowed";
-            };
-        };
-        link: {};
     };
     font: {
         default: {
@@ -384,6 +312,75 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
     };
     isDangerous: {
         true: {};
+    };
+    variant: {
+        unset: {};
+        solid: {
+            border: "none";
+            color: "#ffffff";
+            background: "var(--primary-500)";
+            selectors: {
+                "&:hover:not(:disabled)": {
+                    background: "var(--primary-400)";
+                    cursor: "pointer";
+                };
+            };
+            ":disabled": {
+                background: "var(--primary-400)";
+                cursor: "not-allowed";
+            };
+        };
+        dashed: {
+            border: "1px dashed var(--terceary-500)";
+            color: "var(--terceary-500)";
+            background: "inherit";
+            selectors: {
+                "&:hover:not(:disabled)": {
+                    border: "1px dashed var(--primary-400)";
+                    color: "var(--primary-400)";
+                    cursor: "pointer";
+                };
+            };
+            ":disabled": {
+                filter: "brightness(0.9)";
+                border: "none";
+                cursor: "not-allowed";
+            };
+        };
+        outline: {
+            border: "1px solid var(--terceary-500)";
+            color: "var(--terceary-500)";
+            background: "inherit";
+            selectors: {
+                "&:hover:not(:disabled)": {
+                    border: "1px solid var(--primary-400)";
+                    color: "var(--primary-400)";
+                    cursor: "pointer";
+                };
+            };
+            ":disabled": {
+                filter: "brightness(0.9)";
+                border: "none";
+                cursor: "not-allowed";
+            };
+        };
+        ghost: {
+            color: "var(--terceary-500)";
+            border: "none";
+            background: "inherit";
+            selectors: {
+                "&:hover:not(:disabled)": {
+                    filter: "brightness(0.9)";
+                    cursor: "pointer";
+                };
+            };
+            ":disabled": {
+                filter: "brightness(0.9)";
+                border: "none";
+                cursor: "not-allowed";
+            };
+        };
+        link: {};
     };
     size: {
         unset: {

@@ -4,11 +4,7 @@ export const buttonStyle = recipe({
   base: { display: "flex", transition: "all 0.1s" },
 
   variants: {
-    direction: {
-      row: { flexDirection: "row" },
-      column: { flexDirection: "column" },
-    },
-
+    // BASE
     align: {
       normal: { alignItems: "normal" },
       stretch: { alignItems: "stretch" },
@@ -31,74 +27,6 @@ export const buttonStyle = recipe({
       "space-evenly": { justifyContent: "space-evenly" },
       initial: { justifyContent: "initial" },
       inherit: { justifyContent: "inherit" },
-    },
-
-    variant: {
-      unset: {},
-      solid: {
-        border: "none",
-        color: "#ffffff",
-        background: "var(--primary-500)",
-
-        ":hover": {
-          background: "var(--primary-400)",
-          cursor: "pointer",
-        },
-        ":disabled": {
-          background: "var(--primary-400)",
-          cursor: "not-allowed",
-        },
-      },
-      dashed: {
-        border: "1px dashed var(--terceary-500)",
-        color: "var(--terceary-500)",
-        background: "inherit",
-
-        ":hover": {
-          border: "1px dashed var(--primary-400)",
-          color: "var(--primary-400)",
-          cursor: "pointer",
-        },
-        ":disabled": {
-          filter: "brightness(0.9)",
-          border: "none",
-          cursor: "not-allowed",
-        },
-      },
-      outline: {
-        border: "1px solid var(--terceary-500)",
-        color: "var(--terceary-500)",
-        background: "inherit",
-
-        ":hover": {
-          border: "1px solid var(--primary-400)",
-          color: "var(--primary-400)",
-          cursor: "pointer",
-        },
-        ":disabled": {
-          filter: "brightness(0.9)",
-          border: "none",
-          cursor: "not-allowed",
-        },
-        selectors: {
-          "&:not(:disabled):hover": {},
-        },
-      },
-      ghost: {
-        color: "var(--terceary-500)",
-        border: "none",
-        background: "inherit",
-        ":hover": {
-          filter: "brightness(0.9)",
-          cursor: "pointer",
-        },
-        ":disabled": {
-          filter: "brightness(0.9)",
-          border: "none",
-          cursor: "not-allowed",
-        },
-      },
-      link: {},
     },
 
     font: {
@@ -203,8 +131,82 @@ export const buttonStyle = recipe({
       "wrap-reverse": { flexWrap: "wrap-reverse" },
     },
 
+    // SPECIFIC
     isAttached: { true: {} },
     isDangerous: { true: {} },
+
+    variant: {
+      unset: {},
+      solid: {
+        border: "none",
+        color: "#ffffff",
+        background: "var(--primary-500)",
+
+        selectors: {
+          "&:hover:not(:disabled)": {
+            background: "var(--primary-400)",
+            cursor: "pointer",
+          },
+        },
+        ":disabled": {
+          background: "var(--primary-400)",
+          cursor: "not-allowed",
+        },
+      },
+      dashed: {
+        border: "1px dashed var(--terceary-500)",
+        color: "var(--terceary-500)",
+        background: "inherit",
+
+        selectors: {
+          "&:hover:not(:disabled)": {
+            border: "1px dashed var(--primary-400)",
+            color: "var(--primary-400)",
+            cursor: "pointer",
+          },
+        },
+        ":disabled": {
+          filter: "brightness(0.9)",
+          border: "none",
+          cursor: "not-allowed",
+        },
+      },
+      outline: {
+        border: "1px solid var(--terceary-500)",
+        color: "var(--terceary-500)",
+        background: "inherit",
+
+        selectors: {
+          "&:hover:not(:disabled)": {
+            border: "1px solid var(--primary-400)",
+            color: "var(--primary-400)",
+            cursor: "pointer",
+          },
+        },
+        ":disabled": {
+          filter: "brightness(0.9)",
+          border: "none",
+          cursor: "not-allowed",
+        },
+      },
+      ghost: {
+        color: "var(--terceary-500)",
+        border: "none",
+        background: "inherit",
+        selectors: {
+          "&:hover:not(:disabled)": {
+            filter: "brightness(0.9)",
+            cursor: "pointer",
+          },
+        },
+        ":disabled": {
+          filter: "brightness(0.9)",
+          border: "none",
+          cursor: "not-allowed",
+        },
+      },
+      link: {},
+    },
 
     size: {
       unset: { height: "unset" },
@@ -215,9 +217,36 @@ export const buttonStyle = recipe({
     },
   },
 
+  compoundVariants: [
+    {
+      variants: { variant: "solid", isDangerous: true },
+      style: {
+        background: "var(--danger-500)",
+        selectors: {
+          "&:hover:not(:disabled)": { background: "var(--danger-400)" },
+        },
+        ":disabled": { background: "var(--danger-400)" },
+      },
+    },
+    {
+      variants: { variant: "outline" || "dashed", isDangerous: true },
+      style: {
+        borderColor: "var(--danger-500)",
+        color: "var(--danger-500)",
+        selectors: {
+          "&:hover:not(:disabled)": {
+            borderColor: "var(--danger-400)",
+            color: "var(--danger-400)",
+          },
+        },
+      },
+    },
+    { variants: { variant: "link", isDangerous: true }, style: {} },
+    { variants: { variant: "ghost", isDangerous: true }, style: {} },
+  ],
+
   defaultVariants: {
     align: "center",
-    direction: "row",
     justify: "center",
     outerSpace: 0,
     interiorSpace: 4,

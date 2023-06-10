@@ -4,11 +4,7 @@ export const flexStyle = recipe({
   base: { display: "flex" },
 
   variants: {
-    direction: {
-      row: { flexDirection: "row" },
-      column: { flexDirection: "column" },
-    },
-
+    // BASE
     align: {
       normal: { alignItems: "normal" },
       stretch: { alignItems: "stretch" },
@@ -98,6 +94,12 @@ export const flexStyle = recipe({
       40: { margin: "var(--space-040)" },
       64: { margin: "var(--space-064)" },
       80: { margin: "var(--space-080)" },
+    },
+
+    // SPECIFIC
+    direction: {
+      row: { flexDirection: "row" },
+      column: { flexDirection: "column" },
     },
 
     wrap: {

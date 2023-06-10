@@ -1,10 +1,9 @@
 import { ButtonHTMLAttributes, CSSProperties, ReactNode } from "react";
-import { SpaceProps, AlignItemsProps, JustifyContentProps, FlexDirectionProps, WrapProps, RadiiProps, FontProps, FontSizeProps, FontWeightProps } from ".";
+import { SpaceProps, AlignItemsProps, JustifyContentProps, WrapProps, RadiiProps, FontProps, FontSizeProps, FontWeightProps } from ".";
 export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className"> & {
     interiorSpace?: SpaceProps;
     outerSpace?: SpaceProps;
     space?: SpaceProps;
-    direction?: FlexDirectionProps;
     align?: AlignItemsProps;
     justify?: JustifyContentProps;
     wrap?: WrapProps;

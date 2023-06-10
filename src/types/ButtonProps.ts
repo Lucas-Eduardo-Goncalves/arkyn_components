@@ -3,7 +3,6 @@ import {
   SpaceProps,
   AlignItemsProps,
   JustifyContentProps,
-  FlexDirectionProps,
   WrapProps,
   RadiiProps,
   FontProps,
@@ -19,7 +18,6 @@ export type ButtonProps = Omit<
   outerSpace?: SpaceProps;
   space?: SpaceProps;
 
-  direction?: FlexDirectionProps;
   align?: AlignItemsProps;
   justify?: JustifyContentProps;
   wrap?: WrapProps;

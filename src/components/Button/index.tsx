@@ -4,7 +4,6 @@ import { ButtonProps } from "../../types";
 export function Button({
   outerSpace,
   interiorSpace,
-  direction,
   align,
   space,
   width,
@@ -34,7 +33,6 @@ export function Button({
       disabled={isLoading || disabled}
       className={buttonStyle({
         align,
-        direction,
         interiorSpace,
         justify,
         space,

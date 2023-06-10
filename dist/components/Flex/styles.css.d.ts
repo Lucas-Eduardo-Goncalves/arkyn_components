@@ -1,12 +1,4 @@
 export declare const flexStyle: import("@vanilla-extract/recipes").RuntimeFn<{
-    direction: {
-        row: {
-            flexDirection: "row";
-        };
-        column: {
-            flexDirection: "column";
-        };
-    };
     align: {
         normal: {
             alignItems: "normal";
@@ -236,6 +228,14 @@ export declare const flexStyle: import("@vanilla-extract/recipes").RuntimeFn<{
         };
         80: {
             margin: "var(--space-080)";
+        };
+    };
+    direction: {
+        row: {
+            flexDirection: "row";
+        };
+        column: {
+            flexDirection: "column";
         };
     };
     wrap: {

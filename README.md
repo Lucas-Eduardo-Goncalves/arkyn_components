@@ -25,6 +25,22 @@
   --terceary-900: #18181b;
   --terceary-950: #09090b;
 
+  --danger-400: #d73628;
+  --danger-500: #ad1e12;
+  --danger-950: #42110d;
+
+  --warning-400: #fba94c;
+  --warning-500: #eb8a1d;
+  --warning-950: #2e1b06;
+
+  --success-400: #04d361;
+  --success-500: #1b873f;
+  --success-950: #051b0d;
+
+  --info-400: #1ef7d0;
+  --info-500: #07847e;
+  --info-950: #163840;
+
   /* PADDING, MARGIN, GAP */
   --space-001: 0.25rem;
   --space-002: 0.5rem;
