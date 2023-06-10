@@ -109,6 +109,9 @@ export declare const buttonStyle: import("@vanilla-extract/recipes").RuntimeFn<{
                 border: "none";
                 cursor: "not-allowed";
             };
+            selectors: {
+                "&:not(:disabled):hover": {};
+            };
         };
         ghost: {
             color: "var(--terceary-500)";

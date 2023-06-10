@@ -1,7 +1,7 @@
 import { recipe } from "@vanilla-extract/recipes";
 
 export const buttonStyle = recipe({
-  base: { display: "flex" },
+  base: { display: "flex", transition: "all 0.1s" },
 
   variants: {
     direction: {
@@ -79,6 +79,9 @@ export const buttonStyle = recipe({
           filter: "brightness(0.9)",
           border: "none",
           cursor: "not-allowed",
+        },
+        selectors: {
+          "&:not(:disabled):hover": {},
         },
       },
       ghost: {
