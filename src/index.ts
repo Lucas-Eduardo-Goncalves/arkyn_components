@@ -1,1 +1,1 @@
-export * from "./components";
+export { Button, Flex, Input, Text } from "./components";

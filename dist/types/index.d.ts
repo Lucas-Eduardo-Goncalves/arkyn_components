@@ -9,5 +9,6 @@ export type { SpaceProps } from "./_space";
 export type { WrapProps } from "./_wrap";
 export type { ButtonProps } from "./ButtonProps";
 export type { FlexProps } from "./FlexProps";
+export type { InputProps } from "./InputProps";
 export type { TextProps } from "./TextProps";
 //# sourceMappingURL=index.d.ts.map
