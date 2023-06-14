@@ -16,8 +16,8 @@
   --terceary-050: #fafafa; /* STRONG-COLOR */
   --terceary-100: #f4f4f5; /* COLOR */
   --terceary-200: #e4e4e7; /* LIGTH-COLOR */
-  --terceary-300: #d4d4d8; /* PLACEHOLDER */
-  --terceary-400: #a1a1aa;
+  --terceary-300: #d4d4d8;
+  --terceary-400: #a1a1aa; /* PLACEHOLDER */
   --terceary-500: #71717a;
   --terceary-600: #52525b;
   --terceary-700: #3f3f46;
