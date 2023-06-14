@@ -5,6 +5,7 @@ const tag = {
   link: (props: any) => <a {...props} />,
   span: (props: any) => <span {...props} />,
   small: (props: any) => <small {...props} />,
+  strong: (props: any) => <strong {...props} />,
   p: (props: any) => <p {...props} />,
   h1: (props: any) => <h1 {...props} />,
   h2: (props: any) => <h2 {...props} />,

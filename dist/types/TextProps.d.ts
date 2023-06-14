@@ -11,6 +11,9 @@ type BaseTypingProps = {
 type AsLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> & BaseTypingProps & {
     as: "link";
 };
+type AsStrongProps = Omit<HTMLAttributes<HTMLElement>, "className"> & BaseTypingProps & {
+    as: "strong";
+};
 type AsSpanProps = Omit<HTMLAttributes<HTMLSpanElement>, "className"> & BaseTypingProps & {
     as: "span";
 };
@@ -23,6 +26,6 @@ type AsPProps = Omit<HTMLAttributes<HTMLParagraphElement>, "className"> & BaseTy
 type AsHeadingProps = Omit<HTMLAttributes<HTMLHeadingElement>, "className"> & BaseTypingProps & {
     as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 };
-export type TextProps = AsLinkProps | AsSpanProps | AsSmallProps | AsPProps | AsHeadingProps;
+export type TextProps = AsLinkProps | AsSpanProps | AsSmallProps | AsPProps | AsHeadingProps | AsStrongProps;
 export {};
 //# sourceMappingURL=TextProps.d.ts.map

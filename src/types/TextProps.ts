@@ -16,6 +16,11 @@ type AsLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className"> &
     as: "link";
   };
 
+type AsStrongProps = Omit<HTMLAttributes<HTMLElement>, "className"> &
+  BaseTypingProps & {
+    as: "strong";
+  };
+
 type AsSpanProps = Omit<HTMLAttributes<HTMLSpanElement>, "className"> &
   BaseTypingProps & {
     as: "span";
@@ -41,4 +46,5 @@ export type TextProps =
   | AsSpanProps
   | AsSmallProps
   | AsPProps
-  | AsHeadingProps;
+  | AsHeadingProps
+  | AsStrongProps;

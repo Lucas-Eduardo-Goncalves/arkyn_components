@@ -118,6 +118,20 @@ export const inputStyle = recipe({
       md: { height: "var(--size-md)" },
       lg: { height: "var(--size-lg)" },
     },
+
+    borderSize: {
+      xs: { borderWidth: "1px" },
+      sm: { borderWidth: "2px" },
+      md: { borderWidth: "3px" },
+      lg: { borderWidth: "4px" },
+    },
+
+    asError: {
+      true: {
+        borderColor: "var(--danger-500)",
+        outlineColor: "var(--danger-500)",
+      },
+    },
   },
 
   defaultVariants: {

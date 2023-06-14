@@ -9,7 +9,7 @@ import {
 
 export type InputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
-  "className"
+  "className" | "size"
 > & {
   interiorSpace?: SpaceProps;
   outerSpace?: SpaceProps;
@@ -26,8 +26,12 @@ export type InputProps = Omit<
   fontWeight?: FontWeightProps;
 
   // Button component exclusive
+  label?: string;
+  error?: string;
+
   variant?: "outline" | "dashed" | "solid";
   size?: "xs" | "sm" | "md" | "lg" | "unset";
+  borderSize?: "xs" | "sm" | "md" | "lg";
 
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;

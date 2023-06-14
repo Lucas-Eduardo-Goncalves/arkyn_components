@@ -216,5 +216,25 @@ export declare const inputStyle: import("@vanilla-extract/recipes").RuntimeFn<{
             height: "var(--size-lg)";
         };
     };
+    borderSize: {
+        xs: {
+            borderWidth: "1px";
+        };
+        sm: {
+            borderWidth: "2px";
+        };
+        md: {
+            borderWidth: "3px";
+        };
+        lg: {
+            borderWidth: "4px";
+        };
+    };
+    asError: {
+        true: {
+            borderColor: "var(--danger-500)";
+            outlineColor: "var(--danger-500)";
+        };
+    };
 }>;
 //# sourceMappingURL=styles.css.d.ts.map
