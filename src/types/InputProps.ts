@@ -5,6 +5,8 @@ import {
   FontProps,
   FontSizeProps,
   FontWeightProps,
+  TextProps,
+  FlexProps,
 } from ".";
 
 export type InputProps = Omit<
@@ -35,4 +37,7 @@ export type InputProps = Omit<
 
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
+
+  flexProps?: FlexProps;
+  errorProps?: TextProps;
 };

@@ -1,5 +1,5 @@
 import { InputHTMLAttributes, CSSProperties, ReactNode } from "react";
-import { SpaceProps, RadiiProps, FontProps, FontSizeProps, FontWeightProps } from ".";
+import { SpaceProps, RadiiProps, FontProps, FontSizeProps, FontWeightProps, TextProps, FlexProps } from ".";
 export type InputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "className" | "size"> & {
     interiorSpace?: SpaceProps;
     outerSpace?: SpaceProps;
@@ -18,5 +18,7 @@ export type InputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "className"
     borderSize?: "xs" | "sm" | "md" | "lg";
     leftIcon?: ReactNode;
     rightIcon?: ReactNode;
+    flexProps?: FlexProps;
+    errorProps?: TextProps;
 };
 //# sourceMappingURL=InputProps.d.ts.map

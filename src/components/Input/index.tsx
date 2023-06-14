@@ -1,7 +1,6 @@
 import { inputStyle } from "./styles.css";
 import { InputProps } from "../../types";
 import { Flex } from "../Flex";
-import { useId } from "react";
 import { Text } from "../Text";
 
 export function Input({
@@ -24,14 +23,24 @@ export function Input({
   error,
   label,
   borderSize,
+  flexProps,
+  errorProps,
   ...rest
 }: InputProps) {
-  const id = useId();
   return (
-    <Flex>
-      {label && <label htmlFor={id}></label>}
+    <Flex direction="column" space={2} {...flexProps}>
+      {label && (
+        <label
+          style={{
+            color: "var(--terceary-100)",
+            fontWeight: "var(--font-regular)",
+          }}
+        >
+          {label}
+        </label>
+      )}
+
       <input
-        id={id}
         className={inputStyle({
           interiorSpace,
           font,
@@ -47,7 +56,16 @@ export function Input({
         style={{ width, background: bg, flex, height, ...style }}
         {...rest}
       />
-      {error && <Text as="strong">{error}</Text>}
+
+      {error && (
+        <Text
+          as="strong"
+          style={{ color: "var(--danger-500)" }}
+          {...errorProps}
+        >
+          {error}
+        </Text>
+      )}
     </Flex>
   );
 }
