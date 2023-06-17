@@ -14,13 +14,13 @@
   --primary-950: #2e1065;
 
   --terceary-050: #fafafa; /* STRONG-COLOR */
-  --terceary-100: #f4f4f5; /* COLOR */
-  --terceary-200: #e4e4e7; /* LIGTH-COLOR */
-  --terceary-300: #d4d4d8;
-  --terceary-400: #a1a1aa; /* PLACEHOLDER */
+  --terceary-100: #f4f4f5;
+  --terceary-200: #e4e4e7; /* COLOR */
+  --terceary-300: #d4d4d8; /* LIGTH-COLOR */
+  --terceary-400: #a1a1aa;
   --terceary-500: #71717a;
   --terceary-600: #52525b;
-  --terceary-700: #3f3f46;
+  --terceary-700: #3f3f46; /* PLACEHOLDER */
   --terceary-800: #27272a; /* LINES */
   --terceary-900: #18181b;
   --terceary-950: #09090b; /* DEFAULT BG */

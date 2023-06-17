@@ -2,8 +2,8 @@ import { recipe } from "@vanilla-extract/recipes";
 
 export const inputStyle = recipe({
   base: {
-    color: "var(--terceary-100)",
-    "::placeholder": { color: "var(--terceary-400)" },
+    color: "var(--terceary-200)",
+    "::placeholder": { color: "var(--terceary-700)" },
     ":disabled": {
       cursor: "not-allowed",
     },

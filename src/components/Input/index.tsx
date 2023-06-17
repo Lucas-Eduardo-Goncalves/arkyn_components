@@ -32,7 +32,7 @@ export function Input({
       {label && (
         <label
           style={{
-            color: "var(--terceary-100)",
+            color: "var(--terceary-200)",
             fontWeight: "var(--font-regular)",
           }}
         >
